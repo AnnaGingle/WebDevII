@@ -80,6 +80,7 @@ img {
 
 }
 
+
 @keyframes float {
     0% {
         transform: translateX(0%);
@@ -96,6 +97,33 @@ img {
         transform: scale(1.01);
     }
 
+}
+
+.animation-baby-container-1 {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    transform: rotateX(150deg);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg);
+
+    }
+
+    50% {
+        transform: rotateY(180deg)
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
 }
 
 .container {
